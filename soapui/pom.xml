@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.smartbear.soapui</groupId>
         <artifactId>soapui-project</artifactId>
-        <version>5.6.0-SNAPSHOT</version>
+        <version>5.6.0-kimholan</version>
     </parent>
 
     <artifactId>soapui</artifactId>
@@ -51,26 +51,6 @@
             </plugin>
 
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>xmlbeans-maven-plugin</artifactId>
-                <version>2.3.3</version>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>xmlbeans</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <inherited>true</inherited>
-                <configuration>
-                    <javaSource>1.5</javaSource>
-                    <verbose>false</verbose>
-                    <schemaDirectory>src/main/xsd</schemaDirectory>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
             </plugin>
@@ -104,6 +84,18 @@
     <dependencies>
 
         <!-- Testing -->
+
+        <dependency>
+            <groupId>com.smartbear.soapui</groupId>
+            <artifactId>soapui-xmlbeans</artifactId>
+            <version>5.6.0-kimholan</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.mail</groupId>
+                    <artifactId>javax.mail-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -203,13 +195,13 @@
         <dependency>
             <groupId>com.smartbear.utils.analytics</groupId>
             <artifactId>analytics-core</artifactId>
-            <version>5.6.0-SNAPSHOT</version>
+            <version>5.5.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.smartbear.utils.analytics</groupId>
             <artifactId>out-app-analytics-provider</artifactId>
-            <version>5.6.0-SNAPSHOT</version>
+            <version>5.5.0</version>
         </dependency>
 
         <!-- JGoodies -->
@@ -398,11 +390,85 @@
             <artifactId>commons-codec</artifactId>
             <version>1.10</version> <!--HttpClient with version 4.5.5 and higher needs minimum 1.10 version-->
         </dependency>
+
+
+
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-            <version>2.4.4</version>
+            <artifactId>groovy</artifactId>
+            <version>2.5.6</version>
+            <classifier>indy</classifier>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-dateutil</artifactId>
+            <version>2.5.6</version>
+            <classifier>indy</classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.codehaus.groovy</groupId>
+                    <artifactId>groovy</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-datetime</artifactId>
+            <version>2.5.6</version>
+            <classifier>indy</classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.codehaus.groovy</groupId>
+                    <artifactId>groovy</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-json</artifactId>
+            <version>2.5.6</version>
+            <classifier>indy</classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.codehaus.groovy</groupId>
+                    <artifactId>groovy</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-jsr223</artifactId>
+            <version>2.5.6</version>
+            <classifier>indy</classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.codehaus.groovy</groupId>
+                    <artifactId>groovy</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-xml</artifactId>
+            <version>2.5.6</version>
+            <classifier>indy</classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.codehaus.groovy</groupId>
+                    <artifactId>groovy</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+
+
+
+
+
+
+
+
         <dependency>
             <groupId>rhino</groupId>
             <artifactId>js</artifactId>
@@ -442,6 +508,12 @@
             <groupId>javax.jms</groupId>
             <artifactId>jms</artifactId>
             <version>1.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.mail</groupId>
+                    <artifactId>javax.mail-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>hermesjms</groupId>

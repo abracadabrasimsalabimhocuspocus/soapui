@@ -37,7 +37,7 @@ public class AnalyticsHelper {
         manager.setExecutorService(SoapUI.getThreadPool());
         SoapUIProductInfo productInfo = SoapUIProductInfo.getInstance();
         manager.registerAnalyticsProviderFactory(new OSUserProviderFactory(productInfo));
-        if (SoapUI.getSettings().getBoolean(UISettings.DISABLE_ANALYTICS, false)) {
+        if (SoapUI.getSettings().getBoolean(UISettings.DISABLE_ANALYTICS, true)) {
             return;
         }
         manager.registerAnalyticsProviderFactory(new SoapUIOSMixpanelProviderFactory(productInfo, userIdentifier, AnalyticsProviderFactory.HandleType.MANDATORY));
