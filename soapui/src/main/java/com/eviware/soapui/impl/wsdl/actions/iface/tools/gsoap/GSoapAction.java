@@ -17,8 +17,7 @@
 package com.eviware.soapui.impl.wsdl.actions.iface.tools.gsoap;
 
 import com.eviware.soapui.SoapUI;
-import com.eviware.soapui.analytics.Analytics;
-import com.eviware.soapui.analytics.SoapUIActions;
+
 import com.eviware.soapui.impl.wsdl.actions.iface.tools.support.AbstractToolsAction;
 import com.eviware.soapui.impl.wsdl.actions.iface.tools.support.ArgumentBuilder;
 import com.eviware.soapui.impl.wsdl.actions.iface.tools.support.ProcessToolRunner;
@@ -38,7 +37,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.eviware.soapui.analytics.SoapUIActions.USE_GSOAP_ARTIFACTS_TOOL;
 
 /**
  * Invokes GSoap wsdl2h
@@ -227,7 +225,6 @@ public class GSoapAction extends AbstractToolsAction<Interface> {
             toolHost.run(new ProcessToolRunner(builders.toArray(new ProcessBuilder[builders.size()]), "GSoap",
                     modelItem));
         }
-        Analytics.trackAction(USE_GSOAP_ARTIFACTS_TOOL);
     }
 
     private ArgumentBuilder buildWsdl2HArgs(StringToStringMap values, Interface modelItem) {

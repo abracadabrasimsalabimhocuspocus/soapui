@@ -16,8 +16,7 @@
 
 package com.eviware.soapui.impl.actions;
 
-import com.eviware.soapui.analytics.Analytics;
-import com.eviware.soapui.analytics.SoapUIActions;
+
 import com.eviware.soapui.impl.WorkspaceImpl;
 import com.eviware.soapui.impl.WsdlInterfaceFactory;
 import com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException;
@@ -122,9 +121,6 @@ public class NewWsdlProjectAction extends AbstractSoapUIAction<WorkspaceImpl> {
                             importWsdl(project, url);
                         }
 
-                        if (param != null && param instanceof SoapUIActions) {
-                            Analytics.trackAction((SoapUIActions) param);
-                        }
 
                         break;
                     }

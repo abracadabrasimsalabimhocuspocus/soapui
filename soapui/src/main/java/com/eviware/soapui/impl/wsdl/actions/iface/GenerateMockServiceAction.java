@@ -17,7 +17,6 @@
 package com.eviware.soapui.impl.wsdl.actions.iface;
 
 import com.eviware.soapui.SoapUI;
-import com.eviware.soapui.analytics.Analytics;
 import com.eviware.soapui.impl.support.AbstractInterface;
 import com.eviware.soapui.impl.wsdl.WsdlInterface;
 import com.eviware.soapui.impl.wsdl.WsdlProject;
@@ -39,7 +38,6 @@ import com.eviware.x.form.support.AForm;
 
 import java.util.List;
 
-import static com.eviware.soapui.analytics.SoapUIActions.GENERATE_SOAP_MOCK_FROM_NAVIGATOR;
 
 /**
  * Generates a MockService for a specified Interface
@@ -122,9 +120,6 @@ public class GenerateMockServiceAction extends AbstractSoapUIAction<WsdlInterfac
                 }
             }
 
-            if (mockService != null) {
-                Analytics.trackAction(GENERATE_SOAP_MOCK_FROM_NAVIGATOR);
-            }
         }
     }
 

@@ -72,9 +72,8 @@ then
     JAVA_OPTS="$JAVA_OPTS -Dsoapui.ext.listeners=$SOAPUI_HOME/bin/listeners"
     JAVA_OPTS="$JAVA_OPTS -Dsoapui.ext.actions=$SOAPUI_HOME/bin/actions"
     JAVA_OPTS="$JAVA_OPTS -Djava.library.path=$SOAPUI_HOME/bin"
-	JAVA_OPTS="$JAVA_OPTS -Dwsi.dir=$SOAPUI_HOME/wsi-test-tools"
-# uncomment to disable browser component
-#   JAVA_OPTS="$JAVA_OPTS -Dsoapui.browser.disabled=true"
+	  JAVA_OPTS="$JAVA_OPTS -Dwsi.dir=$SOAPUI_HOME/wsi-test-tools"
+    JAVA_OPTS="$JAVA_OPTS -Dsoapui.browser.disabled=true"
 fi
 
 export JAVA_OPTS

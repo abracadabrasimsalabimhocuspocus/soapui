@@ -17,7 +17,6 @@
 package com.eviware.soapui.impl.wsdl.actions.iface.tools.jbossws;
 
 import com.eviware.soapui.SoapUI;
-import com.eviware.soapui.analytics.Analytics;
 import com.eviware.soapui.impl.wsdl.actions.iface.tools.support.AbstractToolsAction;
 import com.eviware.soapui.impl.wsdl.actions.iface.tools.support.ArgumentBuilder;
 import com.eviware.soapui.impl.wsdl.actions.iface.tools.support.ProcessToolRunner;
@@ -53,7 +52,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
-import static com.eviware.soapui.analytics.SoapUIActions.USE_JBOSSWS_ARTIFACTS_TOOL;
 
 /**
  * Invokes jbossws wsdl2java tools
@@ -172,7 +170,6 @@ public class WSToolsWsdl2JavaAction extends AbstractToolsAction<Interface> {
         builder.directory(new File(wstoolsDir));
 
         toolHost.run(new ProcessToolRunner(builder, "JBossWS wstools", modelItem, args));
-        Analytics.trackAction(USE_JBOSSWS_ARTIFACTS_TOOL);
     }
 
     private ArgumentBuilder buildArgs(StringToStringMap values, boolean isWindows, Interface modelItem)

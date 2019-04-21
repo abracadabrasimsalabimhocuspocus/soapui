@@ -16,8 +16,7 @@
 
 package com.eviware.soapui.impl.wsdl.actions.testcase;
 
-import com.eviware.soapui.analytics.Analytics;
-import com.eviware.soapui.analytics.SoapUIActions;
+
 import com.eviware.soapui.impl.wsdl.loadtest.WsdlLoadTest;
 import com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase;
 import com.eviware.soapui.support.UISupport;
@@ -46,10 +45,5 @@ public class AddNewLoadTestAction extends AbstractSoapUIAction<WsdlTestCase> {
 
         WsdlLoadTest loadTest = testCase.addNewLoadTest(name);
         UISupport.selectAndShow(loadTest);
-        if (param != null && param instanceof SoapUIActions) {
-            Analytics.trackAction((SoapUIActions) param);
-        } else {
-            Analytics.trackAction(SoapUIActions.CREATE_LOAD_TEST);
-        }
     }
 }

@@ -17,7 +17,7 @@
 package com.eviware.soapui.impl.wsdl.panels.assertions;
 
 import com.eviware.soapui.SoapUI;
-import com.eviware.soapui.analytics.SoapUIActions;
+
 import com.eviware.soapui.impl.support.actions.ShowOnlineHelpAction;
 import com.eviware.soapui.impl.wsdl.WsdlInterface;
 import com.eviware.soapui.impl.wsdl.WsdlProject;
@@ -37,7 +37,6 @@ import com.eviware.soapui.support.action.swing.DefaultActionList;
 import com.eviware.soapui.support.components.JXToolBar;
 import com.eviware.soapui.support.components.SimpleForm;
 import com.l2fprod.common.swing.renderer.DefaultCellRenderer;
-import com.eviware.soapui.analytics.Analytics;
 
 import javax.swing.AbstractAction;
 import javax.swing.JCheckBox;
@@ -313,8 +312,6 @@ public class AddAssertionPanel extends SimpleDialog {
             UISupport.showErrorMessage("Failed to add assertion");
             return false;
         }
-        Analytics.trackAction(SoapUIActions.ADD_ASSERTION, "Type", assertion.getLabel());
-
         recentAssertionHandler.add(selection);
 
         if (assertion.isConfigurable()) {
