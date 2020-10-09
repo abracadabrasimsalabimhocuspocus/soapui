@@ -296,7 +296,7 @@ export JAVA_HOME=~/lib/java8 PATH=~/lib/java8/bin:$PATH
 ```
 - Build the project (skip the tests) 
 ```
-mvn clean install -DskipTests
+mvn clean install -DskipTests -Pxmlbeans
 ```
 - Switch to JDK11
 ```
