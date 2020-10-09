@@ -30,17 +30,17 @@ developer@debian:~/workspace/soapui$ export JAVA_HOME=~/lib/java8 PATH=~/lib/jav
 [INFO] SoapUI XMLBeans                                                    [jar]
 [INFO] 
 [INFO] ----------------< com.smartbear.soapui:soapui-project >-----------------
-[INFO] Building SoapUI project 5.6.2-kimholan                             [1/2]
+[INFO] Building SoapUI project 5.6.2-cees                             [1/2]
 [INFO] --------------------------------[ pom ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ soapui-project ---
 [INFO] Deleting /home/developer/workspace/soapui (includes = [*.log], excludes = [])
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ soapui-project ---
-[INFO] Installing /home/developer/workspace/soapui/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-project/5.6.2-kimholan/soapui-project-5.6.2-kimholan.pom
+[INFO] Installing /home/developer/workspace/soapui/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-project/5.6.2-cees/soapui-project-5.6.2-cees.pom
 [INFO] 
 [INFO] ----------------< com.smartbear.soapui:soapui-xmlbeans >----------------
-[INFO] Building SoapUI XMLBeans 5.6.2-kimholan                            [2/2]
+[INFO] Building SoapUI XMLBeans 5.6.2-cees                            [2/2]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ soapui-xmlbeans ---
@@ -69,18 +69,18 @@ developer@debian:~/workspace/soapui$ export JAVA_HOME=~/lib/java8 PATH=~/lib/jav
 [INFO] Tests are skipped.
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ soapui-xmlbeans ---
-[INFO] Building jar: /home/developer/workspace/soapui/soapui-xmlbeans/target/soapui-xmlbeans-5.6.2-kimholan.jar
+[INFO] Building jar: /home/developer/workspace/soapui/soapui-xmlbeans/target/soapui-xmlbeans-5.6.2-cees.jar
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:test-jar (default) @ soapui-xmlbeans ---
 [WARNING] JAR will be empty - no content was marked for inclusion!
-[INFO] Building jar: /home/developer/workspace/soapui/soapui-xmlbeans/target/soapui-xmlbeans-5.6.2-kimholan-tests.jar
+[INFO] Building jar: /home/developer/workspace/soapui/soapui-xmlbeans/target/soapui-xmlbeans-5.6.2-cees-tests.jar
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ soapui-xmlbeans ---
-[INFO] Installing /home/developer/workspace/soapui/soapui-xmlbeans/target/soapui-xmlbeans-5.6.2-kimholan.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-xmlbeans/5.6.2-kimholan/soapui-xmlbeans-5.6.2-kimholan.jar
-[INFO] Installing /home/developer/workspace/soapui/soapui-xmlbeans/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-xmlbeans/5.6.2-kimholan/soapui-xmlbeans-5.6.2-kimholan.pom
-[INFO] Installing /home/developer/workspace/soapui/soapui-xmlbeans/target/soapui-xmlbeans-5.6.2-kimholan-tests.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-xmlbeans/5.6.2-kimholan/soapui-xmlbeans-5.6.2-kimholan-tests.jar
+[INFO] Installing /home/developer/workspace/soapui/soapui-xmlbeans/target/soapui-xmlbeans-5.6.2-cees.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-xmlbeans/5.6.2-cees/soapui-xmlbeans-5.6.2-cees.jar
+[INFO] Installing /home/developer/workspace/soapui/soapui-xmlbeans/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-xmlbeans/5.6.2-cees/soapui-xmlbeans-5.6.2-cees.pom
+[INFO] Installing /home/developer/workspace/soapui/soapui-xmlbeans/target/soapui-xmlbeans-5.6.2-cees-tests.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-xmlbeans/5.6.2-cees/soapui-xmlbeans-5.6.2-cees-tests.jar
 [INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary for SoapUI project 5.6.2-kimholan:
+[INFO] Reactor Summary for SoapUI project 5.6.2-cees:
 [INFO] 
 [INFO] SoapUI project ..................................... SUCCESS [  0.323 s]
 [INFO] SoapUI XMLBeans .................................... SUCCESS [ 30.285 s]
@@ -100,14 +100,14 @@ developer@debian:~/workspace/soapui$ export JAVA_HOME=~/lib/java8 PATH=~/lib/jav
 [INFO] SoapUI system test                                                 [jar]
 [INFO] 
 [INFO] ----------------< com.smartbear.soapui:soapui-project >-----------------
-[INFO] Building SoapUI project 5.6.2-kimholan                             [1/4]
+[INFO] Building SoapUI project 5.6.2-cees                             [1/4]
 [INFO] --------------------------------[ pom ]---------------------------------
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ soapui-project ---
-[INFO] Installing /home/developer/workspace/soapui/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-project/5.6.2-kimholan/soapui-project-5.6.2-kimholan.pom
+[INFO] Installing /home/developer/workspace/soapui/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-project/5.6.2-cees/soapui-project-5.6.2-cees.pom
 [INFO] 
 [INFO] --------------------< com.smartbear.soapui:soapui >---------------------
-[INFO] Building SoapUI 5.6.2-kimholan                                     [2/4]
+[INFO] Building SoapUI 5.6.2-cees                                     [2/4]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ soapui ---
@@ -137,12 +137,12 @@ developer@debian:~/workspace/soapui$ export JAVA_HOME=~/lib/java8 PATH=~/lib/jav
 [INFO] --- maven-jar-plugin:2.4:test-jar (default) @ soapui ---
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ soapui ---
-[INFO] Installing /home/developer/workspace/soapui/soapui/target/soapui-5.6.2-kimholan.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui/5.6.2-kimholan/soapui-5.6.2-kimholan.jar
-[INFO] Installing /home/developer/workspace/soapui/soapui/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui/5.6.2-kimholan/soapui-5.6.2-kimholan.pom
-[INFO] Installing /home/developer/workspace/soapui/soapui/target/soapui-5.6.2-kimholan-tests.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui/5.6.2-kimholan/soapui-5.6.2-kimholan-tests.jar
+[INFO] Installing /home/developer/workspace/soapui/soapui/target/soapui-5.6.2-cees.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui/5.6.2-cees/soapui-5.6.2-cees.jar
+[INFO] Installing /home/developer/workspace/soapui/soapui/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui/5.6.2-cees/soapui-5.6.2-cees.pom
+[INFO] Installing /home/developer/workspace/soapui/soapui/target/soapui-5.6.2-cees-tests.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui/5.6.2-cees/soapui-5.6.2-cees-tests.jar
 [INFO] 
 [INFO] ---------------< com.smartbear.soapui:soapui-installer >----------------
-[INFO] Building SoapUI installer 5.6.2-kimholan                           [3/4]
+[INFO] Building SoapUI installer 5.6.2-cees                           [3/4]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ soapui-installer ---
@@ -178,25 +178,25 @@ developer@debian:~/workspace/soapui$ export JAVA_HOME=~/lib/java8 PATH=~/lib/jav
 [INFO] Reading assembly descriptor: src/main/assembly/win32-standalone-bin.xml
 [INFO] Reading assembly descriptor: src/main/assembly/linux-bin.xml
 [INFO] Reading assembly descriptor: src/main/assembly/mac-bin.xml
-[INFO] Copying files to /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-dist
-[WARNING] Assembly file: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-dist is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
-[INFO] Copying files to /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-dist-standalone
-[WARNING] Assembly file: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-dist-standalone is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
-[INFO] Building zip: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-windows-bin.zip
-[INFO] Building zip: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-win32-standalone-bin.zip
-[INFO] Building tar: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-linux-bin.tar.gz
-[INFO] Building zip: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-mac-bin.zip
+[INFO] Copying files to /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-dist
+[WARNING] Assembly file: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-dist is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
+[INFO] Copying files to /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-dist-standalone
+[WARNING] Assembly file: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-dist-standalone is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
+[INFO] Building zip: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-windows-bin.zip
+[INFO] Building zip: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-win32-standalone-bin.zip
+[INFO] Building tar: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-linux-bin.tar.gz
+[INFO] Building zip: /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-mac-bin.zip
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ soapui-installer ---
-[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/soapui-installer-5.6.2-kimholan.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-kimholan/soapui-installer-5.6.2-kimholan.jar
-[INFO] Installing /home/developer/workspace/soapui/soapui-installer/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-kimholan/soapui-installer-5.6.2-kimholan.pom
-[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-windows-bin.zip to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-kimholan/soapui-installer-5.6.2-kimholan-windows-bin.zip
-[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-win32-standalone-bin.zip to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-kimholan/soapui-installer-5.6.2-kimholan-win32-standalone-bin.zip
-[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-linux-bin.tar.gz to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-kimholan/soapui-installer-5.6.2-kimholan-linux-bin.tar.gz
-[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-kimholan-mac-bin.zip to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-kimholan/soapui-installer-5.6.2-kimholan-mac-bin.zip
+[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/soapui-installer-5.6.2-cees.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-cees/soapui-installer-5.6.2-cees.jar
+[INFO] Installing /home/developer/workspace/soapui/soapui-installer/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-cees/soapui-installer-5.6.2-cees.pom
+[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-windows-bin.zip to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-cees/soapui-installer-5.6.2-cees-windows-bin.zip
+[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-win32-standalone-bin.zip to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-cees/soapui-installer-5.6.2-cees-win32-standalone-bin.zip
+[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-linux-bin.tar.gz to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-cees/soapui-installer-5.6.2-cees-linux-bin.tar.gz
+[INFO] Installing /home/developer/workspace/soapui/soapui-installer/target/assemblies/SoapUI-5.6.2-cees-mac-bin.zip to /home/developer/.m2/repository/com/smartbear/soapui/soapui-installer/5.6.2-cees/soapui-installer-5.6.2-cees-mac-bin.zip
 [INFO] 
 [INFO] --------------< com.smartbear.soapui:soapui-system-test >---------------
-[INFO] Building SoapUI system test 5.6.2-kimholan                         [4/4]
+[INFO] Building SoapUI system test 5.6.2-cees                         [4/4]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ soapui-system-test ---
@@ -222,11 +222,11 @@ developer@debian:~/workspace/soapui$ export JAVA_HOME=~/lib/java8 PATH=~/lib/jav
 [INFO] --- maven-jar-plugin:2.4:test-jar (default) @ soapui-system-test ---
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ soapui-system-test ---
-[INFO] Installing /home/developer/workspace/soapui/soapui-system-test/target/soapui-system-test-5.6.2-kimholan.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-system-test/5.6.2-kimholan/soapui-system-test-5.6.2-kimholan.jar
-[INFO] Installing /home/developer/workspace/soapui/soapui-system-test/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-system-test/5.6.2-kimholan/soapui-system-test-5.6.2-kimholan.pom
-[INFO] Installing /home/developer/workspace/soapui/soapui-system-test/target/soapui-system-test-5.6.2-kimholan-tests.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-system-test/5.6.2-kimholan/soapui-system-test-5.6.2-kimholan-tests.jar
+[INFO] Installing /home/developer/workspace/soapui/soapui-system-test/target/soapui-system-test-5.6.2-cees.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-system-test/5.6.2-cees/soapui-system-test-5.6.2-cees.jar
+[INFO] Installing /home/developer/workspace/soapui/soapui-system-test/pom.xml to /home/developer/.m2/repository/com/smartbear/soapui/soapui-system-test/5.6.2-cees/soapui-system-test-5.6.2-cees.pom
+[INFO] Installing /home/developer/workspace/soapui/soapui-system-test/target/soapui-system-test-5.6.2-cees-tests.jar to /home/developer/.m2/repository/com/smartbear/soapui/soapui-system-test/5.6.2-cees/soapui-system-test-5.6.2-cees-tests.jar
 [INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary for SoapUI project 5.6.2-kimholan:
+[INFO] Reactor Summary for SoapUI project 5.6.2-cees:
 [INFO] 
 [INFO] SoapUI project ..................................... SUCCESS [  0.196 s]
 [INFO] SoapUI ............................................. SUCCESS [ 12.495 s]
