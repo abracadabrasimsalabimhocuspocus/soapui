@@ -14,7 +14,7 @@ It works for now because:
 
 This should work once the JavaFX module is configured correctly:
 ```
-$ export JAVA_HOME=~/lib/java11 PATH=~/lib/java11/bin:$PATH  ;  mvn install -P '!xmlbeans,soapui,assembly' -DskipTests/home/developer/workspace/soapui/soapui/src/main/java/com/eviware/soapui/analytics/SoapUIProductInfo.java:
+$ export JAVA_HOME=~/lib/java11 PATH=~/lib/java11/bin:$PATH  ;  mvn install -P '!xmlbeans,soapui,assembly' -DskipTests
 ```
 
 Remember to check the contents of the tar file.
@@ -320,7 +320,7 @@ export JAVA_HOME=~/lib/java11 PATH=~/lib/java11/bin:$PATH
     </configuration>
   </plugin>
 ```
-- Create the SoapUI assembly
+- Create the SoapUI assembly using JDK11
 ```
-mvn install -f soapui-installer/pom.xml -Passembly
+mvn install -P '!xmlbeans,soapui,assembly' -DskipTests -Dmaven.repo.local=m2-repo
 ```
